@@ -1,0 +1,68 @@
+---
+layout: wide-page
+---
+
+<section class="jumbotron">
+  {{ content }}
+</section>
+
+<section>
+
+  <h2>Technologies</h2>
+
+  <div class="container">
+
+    <div class="row">
+
+      {% for item in site.data.technologies %}
+
+        {% assign width = 12 | divided_by: forloop.length %}
+
+        <div class="col-md-{{ width }}">
+          <h3>{{ item.category }}</h3>
+
+          {% for technology in item.technologies %}
+            <span class="label label-primary">{{ technology }}</span>
+          {% endfor %}
+
+        </div>
+      {% endfor %}
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<section>
+
+  <h2>Experience</h2>
+  {% assign sorted_jobs = site.jobs | sort:"date_from" | reverse %}
+  {% for job in sorted_jobs %}
+    <div class="row job">
+      <div>{{ job }}</div>
+    </div>
+  {% endfor %}
+
+</section>
+
+<section>
+
+  <h2>Education</h2>
+
+  {% assign sorted_universities = site.universities | sort:"date_from" | reverse %}
+  {% for university in sorted_universities %}
+    <div class="row university">
+      <div>{{ university }}</div>
+    </div>
+  {% endfor %}
+
+  {% assign sorted_schools = site.schools | sort:"date_from" | reverse %}
+  {% for school in sorted_schools %}
+    <div class="row school">
+      <div>{{ school }}</div>
+    </div>
+  {% endfor %}
+
+</section>

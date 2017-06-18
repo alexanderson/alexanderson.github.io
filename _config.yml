@@ -16,11 +16,13 @@
 title: Alex Anderson
 email:
 description: > # this means to ignore newlines until "baseurl:"
-  Welcome to my github.io page.
+  github.io page and online CV of Alex Anderson.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
+
 github_username:  alexanderson
+
+job_date_fmt: "%b %Y"
 
 # Build settings
 markdown: kramdown
@@ -29,3 +31,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+  - jobs
+  - universities
+  - schools

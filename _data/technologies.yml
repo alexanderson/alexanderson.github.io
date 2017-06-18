@@ -1,0 +1,39 @@
+- category: Python
+  technologies:
+    - CherryPy
+    - Flask
+    - Falcon
+    - SQLAlchemy
+    - Celery
+    - py.test
+    - Behave
+- category: Frontend
+  technologies:
+    - Backbone
+    - jQuery
+    - Backbone
+    - d3
+    - Handlebars
+    - Sass
+    - Phantom
+    - Mocha
+- category: Persistence
+  technologies:
+    - SQL
+    - PostgreSQL
+    - sqlite
+    - Redis
+    - MongoDB
+    - InfluxDB
+- category: Other
+  technologies:
+    - Ubuntu
+    - CentOS
+    - Windows
+    - Lua
+    - Golang
+    - Git
+    - Docker
+    - Ansible
+    - Vagrant
+    - Jenkins
