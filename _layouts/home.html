@@ -1,21 +1,30 @@
 ---
-layout: default
+layout: wide-page
 ---
 
-<div class="home">
+<section class="jumbotron">
 
-  {{ content }}
+  <div class="container">
 
-  {% assign cv = site.pages | where: "title", "CV" | first %}
-  <a href="{{ cv.url | relative_url }}">
-    <h1 class="page-heading">{{ cv.title | escape }}</h1>
-  </a>
-  <p>An online version of my CV.</p>
+    <h1>Alexander Anderson</h1>
+    <p>
+      Python developer with over 4 years experience, a passion for clean code and
+      strong appreciation of testing.
+      I have a calm, can-do attitude and I am always eager to improve and learn.
+    </p>
+  </div>
+
+</section>
 
 
-  <h1 class="page-heading">Posts</h1>
+<div class="container">
 
-    <em>Coming soon....maybe.</em>
+  <article class="home">
 
+    <h2>{% include icon-github.html username=site.github_username %}</h2>
+
+    Online CV coming soon.
+
+  </article>
 
 </div>

@@ -195,7 +195,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   minima (~> 2.0)
-  tzinfo-data
 
 RUBY VERSION
    ruby 2.3.1p112
